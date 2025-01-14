@@ -1,0 +1,166 @@
+
+<head>
+    <style>
+        header {
+          background: lightblue;
+          border: solid blue;
+          border-width: 10px 0;
+          margin: 0 auto;
+          text-align: center;
+          animation: slideIn 1s ease-in-out;
+        }
+      
+        h1 {
+          font-size: 3em;
+          color: white;
+          animation: fadeIn 2s ease-in-out;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+      
+        .circle {
+          height: 250px;
+          width: 250px;
+          background: #384e79;
+          border-radius: 50%;
+          border: 10px solid white;
+          display: inline-block;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease;
+        }
+      
+        .circle:hover {
+          transform: scale(1.1);
+        }
+      
+        h3 {
+          background-color: #6200ff;
+          color: white;
+          padding: 15px;
+          font-size: 1.5em;
+          border-left: 10px solid #d6d5cd;
+          animation: slideFromLeft 1s ease-in-out;
+          transition: background-color 0.3s ease;
+        }
+      
+        h3:hover {
+          background-color: rgb(204, 0, 255);
+        }
+      
+        body {
+          font-family: helvetica, arial, sans-serif;
+          background-color: #f4f4f4;
+        }
+      
+        p, ul {
+          padding-left: 50px;
+          font-size: 1.3em;
+          color: black;
+          animation: fadeInUp 1.5s ease-in-out;
+        }
+      
+        ul {
+          list-style-type: square;
+        }
+      
+        /* Animations */
+        @keyframes slideIn {
+          from {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      
+        @keyframes fadeInUp {
+          from {
+            transform: translateY(20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      
+        @keyframes slideFromLeft {
+          from {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+      </style>
+          
+  </head>
+  <body>
+    <header>
+      <img class="circle" src="pfp.png">
+    </img>
+      <br>
+      <h1>Baller (binihui134)</h1>
+      <i>Professional Game Developer</i><br><br>
+    </header> <br>
+    <h3>
+      KNOWN LANGUAGES:
+    </h3>
+    <p>Lua (LuaU and Love2D)</p>
+     <p>HTML, JS, CSS</p>
+     <p>C# With Visual Studio (not good at it)</p>
+   <h3>
+     ABOUT ME
+   </h3>
+  <p>I love to code projects in my free time</p>
+  <p>I love cats. if it weren't evident enough</p>
+    
+  <h3>
+     GAMES
+   </h3>
+  <p>######### - Coming soon, On Roblox</p>
+  <h3>
+     EXPERIENCES
+   </h3>
+  <p>I have 5 years in coding roblox lua (Though my peak is in the 3rd or 4th year)</p>
+  <p>I enjoy chatting with other developers (mostly lua)</p>
+  
+  <h3>
+    EXPERIENCES
+  </h3>
+ <p>Blackprint Studios (Roblox)</p>
+ <h3>
+  CONTACT ME
+</h3>
+<p>my super secret email so my friends don't find my email: ballerswork@gmail.com</p>
+<p>Discord: binihui134#0 (May take a bit of time for me to notice)</p>
+<p>Feel Free to contact me!</p>
+<a>© 2025 Baller (binihui134). Unauthorized use or duplication without written consent is prohibited.</a>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const elements = document.querySelectorAll('h3, p, ul');
+      elements.forEach((el) => {
+        const position = el.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+        if (position < screenHeight) {
+          el.style.animationPlayState = 'running';
+        }
+      });
+    });
+  </script>
+  
+  </body>
+    
